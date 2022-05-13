@@ -38,8 +38,8 @@ export default class Discount {
     // to conserve entity immutability through adapters
     public get output(): DiscountOutput {
         return {
-            code: this.code.get(),
-            value: this.value.get(),
+            code: this.code.output,
+            value: this.value.output,
         };
     }
 }

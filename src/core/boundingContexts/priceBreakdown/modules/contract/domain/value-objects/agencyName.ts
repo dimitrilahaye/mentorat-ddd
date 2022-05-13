@@ -27,7 +27,7 @@ export default class AgencyName extends ValueObject<AgencyNameOutput> {
         return true;
     }
 
-    public get(): AgencyNameOutput {
+    public get output(): AgencyNameOutput {
         return this.value;
     }
 }

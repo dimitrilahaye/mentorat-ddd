@@ -53,8 +53,8 @@ export default class CommissionDistribution {
     // to conserve entity immutability through adapters
     public get output(): CommissionDistributionOutput {
         return {
-            agencyCommissionDistribution: this.agencyCommissionDistribution.get(),
-            providerCommissionDistribution: this.providerCommissionDistribution.get(),
+            agencyCommissionDistribution: this.agencyCommissionDistribution.output,
+            providerCommissionDistribution: this.providerCommissionDistribution.output,
         };
     }
 }

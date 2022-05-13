@@ -27,7 +27,7 @@ export default class Currency extends ValueObject<CurrencyOutput> {
         return true;
     }
 
-    public get(): CurrencyOutput {
+    public get output(): CurrencyOutput {
         return this.value;
     }
 }

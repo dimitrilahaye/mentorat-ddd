@@ -3,5 +3,5 @@ export default abstract class ValueObject<Output> {
 
     protected abstract validate(): boolean;
 
-    public abstract get(): Output;
+    public abstract get output(): Output;
 }

@@ -23,14 +23,6 @@ export default class Agency {
         this.currency = new Currency(props.agencyCurrency);
     }
 
-    public getName(): AgencyNameOutput {
-        return this.name.get();
-    }
-
-    public getCurrency(): CurrencyOutput {
-        return this.currency.get();
-    }
-
     public update({ agencyCurrency, agencyName }: UpdateAgencyProps): void {
         if (agencyCurrency) {
             this.currency = new Currency(agencyCurrency);
@@ -43,8 +35,8 @@ export default class Agency {
     // to conserve entity immutability through adapters
     public get output(): AgencyOutput {
         return {
-            name: this.getName(),
-            currency: this.getCurrency(),
+            name: this.name.output,
+            currency: this.currency.output,
         };
     }
 }

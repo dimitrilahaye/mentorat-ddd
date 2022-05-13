@@ -27,7 +27,7 @@ export default class AgencyCommissionDistribution extends ValueObject<AgencyComm
         return true;
     }
 
-    public get(): AgencyCommissionDistributionOutput {
+    public get output(): AgencyCommissionDistributionOutput {
         return this.value;
     }
 }

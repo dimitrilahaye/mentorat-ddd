@@ -27,7 +27,7 @@ export default class Commission extends ValueObject<CommissionOutput> {
         return true;
     }
 
-    public get(): CommissionOutput {
+    public get output(): CommissionOutput {
         return this.value;
     }
 }

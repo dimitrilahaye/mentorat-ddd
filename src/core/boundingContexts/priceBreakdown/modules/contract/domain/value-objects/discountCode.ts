@@ -27,7 +27,7 @@ export default class DiscountCode extends ValueObject<DiscountCodeOutput> {
         return true;
     }
 
-    public get(): DiscountCodeOutput {
+    public get output(): DiscountCodeOutput {
         return this.value;
     }
 }

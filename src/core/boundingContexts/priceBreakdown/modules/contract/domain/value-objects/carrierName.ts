@@ -27,7 +27,7 @@ export default class CarrierName extends ValueObject<CarrierNameOutput> {
         return true;
     }
 
-    public get(): CarrierNameOutput {
+    public get output(): CarrierNameOutput {
         return this.value;
     }
 }

@@ -27,7 +27,7 @@ export default class CarrierPrice extends ValueObject<CarrierPriceOutput> {
         return true;
     }
 
-    public get(): CarrierPriceOutput {
+    public get output(): CarrierPriceOutput {
         return this.value;
     }
 }

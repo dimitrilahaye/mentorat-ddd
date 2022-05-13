@@ -51,22 +51,22 @@ export default class TrainLine extends ValueObject<TrainLineOutput> {
     }
 
     public getCarrierPrice(): CarrierPriceOutput {
-        return this.value.carrierPrice.get();
+        return this.value.carrierPrice.output;
     }
 
     public getCommission(): CommissionOutput {
-        return this.value.commission.get();
+        return this.value.commission.output;
     }
 
     public getDepartureStation(): DepartureStationOutput {
-        return this.value.departureStation.get();
+        return this.value.departureStation.output;
     }
 
     public getArrivalStation(): ArrivalStationOutput {
-        return this.value.arrivalStation.get();
+        return this.value.arrivalStation.output;
     }
 
-    public get(): TrainLineOutput {
+    public get output(): TrainLineOutput {
         // break reference for immutability
         return { ...this.value };
     }

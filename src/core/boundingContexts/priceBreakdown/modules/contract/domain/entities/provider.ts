@@ -35,8 +35,8 @@ export default class Provider {
     // to conserve entity immutability through adapters
     public get output(): ProviderOutput {
         return {
-            name: this.name.get(),
-            currency: this.currency.get(),
+            name: this.name.output,
+            currency: this.currency.output,
         };
     }
 }

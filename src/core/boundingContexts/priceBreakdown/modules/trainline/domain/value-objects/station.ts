@@ -33,7 +33,7 @@ export default class Station extends ValueObject<StationOutput> {
         return true;
     }
 
-    public get(): StationOutput {
+    public get output(): StationOutput {
         // break reference for immutability
         return { ...this.value };
     }

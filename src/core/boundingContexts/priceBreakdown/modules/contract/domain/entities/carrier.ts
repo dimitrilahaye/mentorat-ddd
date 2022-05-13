@@ -23,14 +23,6 @@ export default class Carrier {
         this.currency = new Currency(props.carrierCurrency);
     }
 
-    public getName(): CarrierNameOutput {
-        return this.name.get();
-    }
-
-    public getCurrency(): CurrencyOutput {
-        return this.currency.get();
-    }
-
     public update({ carrierCurrency, carrierName }: UpdateCarrierProps): void {
         if (carrierCurrency) {
             this.currency = new Currency(carrierCurrency);
@@ -43,8 +35,8 @@ export default class Carrier {
     // to conserve entity immutability through adapters
     public get output(): CarrierOutput {
         return {
-            name: this.getName(),
-            currency: this.getCurrency(),
+            name: this.name.output,
+            currency: this.currency.output,
         };
     }
 }

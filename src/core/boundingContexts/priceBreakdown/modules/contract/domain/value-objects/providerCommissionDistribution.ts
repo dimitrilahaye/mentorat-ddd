@@ -27,7 +27,7 @@ export default class ProviderCommissionDistribution extends ValueObject<Provider
         return true;
     }
 
-    public get(): ProviderCommissionDistributionOutput {
+    public get output(): ProviderCommissionDistributionOutput {
         return this.value;
     }
 }

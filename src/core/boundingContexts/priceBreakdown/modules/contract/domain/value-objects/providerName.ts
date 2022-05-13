@@ -27,7 +27,7 @@ export default class ProviderName extends ValueObject<ProviderNameOutput> {
         return true;
     }
 
-    public get(): ProviderNameOutput {
+    public get output(): ProviderNameOutput {
         return this.value;
     }
 }
