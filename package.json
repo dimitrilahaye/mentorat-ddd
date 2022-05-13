@@ -1,0 +1,35 @@
+{
+  "name": "trainlines",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "lint:fix": "eslint src --fix --ext .js,.ts",
+    "build": "tsc",
+    "build:watch": "tsc --watch",
+    "start": "",
+    "test": "jest --run-in-band -c jest.config.ts",
+    "test:watch": "jest --run-in-band --watch -c jest.config.ts"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "lib/index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@thetribe/eslint-config-typescript": "^0.4.0",
+    "@types/jest": "^27.5.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-prettier": "^4.0.0",
+    "jest": "^28.1.0",
+    "prettier": "^2.6.2",
+    "ts-jest": "^28.0.2",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.5.4"
+  },
+  "private": true
+}
