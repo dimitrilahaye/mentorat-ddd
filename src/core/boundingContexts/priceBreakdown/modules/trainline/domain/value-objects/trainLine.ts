@@ -11,7 +11,7 @@ export class TrainLineException extends Error {
     name = "TrainLineException";
 
     constructor() {
-        super("Error during carrier price assignment");
+        super("Error during trainline assignment");
     }
 }
 
